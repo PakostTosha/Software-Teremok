@@ -7,7 +7,7 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QGroupBox, QRadioButton
 # Импорт необходимых нарисованных окон
 from Teremok2_HelloWindow import Ui_TeremokFirstWindow
 from Teremok2_MainWindow import Ui_MainWindow
-from Teremok2_TestAtek impogit rt Ui_TestWindow
+from Teremok2_TestAtek import Ui_TestWindow
 from Teremok2_ResultsTest import Ui_Form
 
 class FirstWindow(QMainWindow):
