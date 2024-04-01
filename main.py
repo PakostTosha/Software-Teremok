@@ -1,8 +1,10 @@
 import sys
 
 from PySide6.QtCore import QSize, Qt
+# Импорт необходимых для работы классов
 from PySide6.QtWidgets import QApplication, QMainWindow, QGroupBox, QRadioButton, QMessageBox
 
+# Импорт необходимых нарисованных окон
 from Teremok2_HelloWindow import Ui_TeremokFirstWindow
 from Teremok2_MainWindow import Ui_MainWindow
 from Teremok2_TestAtek import Ui_TestWindow
