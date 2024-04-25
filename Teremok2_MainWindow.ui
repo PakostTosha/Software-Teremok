@@ -27,7 +27,7 @@
     <string notr="true">background-color: rgb(255,255,255);</string>
    </property>
    <layout class="QGridLayout" name="gridLayout_3">
-    <item row="0" column="0">
+    <item row="1" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="font">
        <font>
@@ -65,7 +65,7 @@ padding: 5px 10px;
 }</string>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab1_firstConsultation">
        <property name="focusPolicy">
@@ -77,10 +77,10 @@ padding: 5px 10px;
        <widget class="QGroupBox" name="child_GB">
         <property name="geometry">
          <rect>
-          <x>90</x>
-          <y>10</y>
+          <x>50</x>
+          <y>280</y>
           <width>1121</width>
-          <height>381</height>
+          <height>321</height>
          </rect>
         </property>
         <property name="title">
@@ -89,182 +89,263 @@ padding: 5px 10px;
         <widget class="QWidget" name="layoutWidget">
          <property name="geometry">
           <rect>
-           <x>20</x>
-           <y>30</y>
-           <width>1081</width>
-           <height>321</height>
+           <x>24</x>
+           <y>29</y>
+           <width>901</width>
+           <height>66</height>
           </rect>
          </property>
-         <layout class="QHBoxLayout" name="horizontalLayout">
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_8">
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout">
-              <item>
-               <widget class="QLabel" name="childFIO_label">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>Фамилия Имя Отчество ребёнка *:</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="childFIO_input">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QLineEdit{
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0">
+           <widget class="QLabel" name="childFIO_label">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>ФИО*:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="birthdayChild_label">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string>Дата рождения*:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="diagnos_label">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Диагноз (при наличии):</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLineEdit" name="childFIO_input">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
 border: 1px solid rgb(33, 33, 34);
 }</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="placeholderText">
-                 <string>ФИО ребёнка</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_2">
-              <item>
-               <widget class="QLabel" name="birthday_label">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                 </font>
-                </property>
-                <property name="layoutDirection">
-                 <enum>Qt::LeftToRight</enum>
-                </property>
-                <property name="text">
-                 <string>Дата рождения ребёнка *:</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QDateEdit" name="birthday_input">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QDateEdit{
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>ФИО ребёнка</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QDateEdit" name="birthdayChild_input">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QDateEdit{
 border: 1px solid rgb(33, 33, 34);
 padding: 1px;
 }</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="buttonSymbols">
-                 <enum>QAbstractSpinBox::UpDownArrows</enum>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_3">
-              <item>
-               <widget class="QLabel" name="diagnos_label">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>Диагноз ребёнка (при наличии):</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="diagnos_input">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QLineEdit{
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="buttonSymbols">
+             <enum>QAbstractSpinBox::UpDownArrows</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLineEdit" name="diagnos_input">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
 border: 1px solid rgb(33, 33, 34);
 }</string>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="placeholderText">
-                 <string>Диагноз ребёнка (при наличии):</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-           </layout>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>Диагноз ребёнка (при наличии):</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>110</y>
+           <width>1091</width>
+           <height>105</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="aboutChild_label">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Общие сведения о ребёнке (поведение, привычки и т.д.):</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
           </item>
           <item>
-           <spacer name="horizontalSpacer">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
+           <widget class="QPlainTextEdit" name="aboutChild_input">
+            <property name="plainText">
+             <string/>
             </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>30</width>
-              <height>20</height>
-             </size>
+            <property name="placeholderText">
+             <string>Поле для общих сведений</string>
             </property>
-           </spacer>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>230</y>
+           <width>371</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="selectParent_label">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Выбрать родителя ребёнка*:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
           </item>
           <item>
-           <layout class="QVBoxLayout" name="verticalLayout_4">
-            <item>
-             <widget class="QLabel" name="aboutChild_label">
-              <property name="font">
-               <font>
-                <pointsize>14</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>Общие сведения о ребёнке (поведение, привычки и т.д.):</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPlainTextEdit" name="aboutChild_input">
-              <property name="plainText">
-               <string/>
-              </property>
-              <property name="placeholderText">
-               <string>Поле для общих сведений</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
+           <widget class="QComboBox" name="selectParent_comboBox"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>480</x>
+           <y>230</y>
+           <width>471</width>
+           <height>66</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="0">
+           <widget class="QLabel" name="dateFirstConsultation_label">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string>Дата проведения ПК*:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="timeFirstConsultation_label">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string>Время проведения ПК:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QDateEdit" name="dateFirstConsultation_input">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QDateEdit{
+border: 1px solid rgb(33, 33, 34);
+padding: 1px;
+}</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="buttonSymbols">
+             <enum>QAbstractSpinBox::UpDownArrows</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QTimeEdit" name="timeFirstConsultation_input"/>
           </item>
          </layout>
         </widget>
@@ -272,169 +353,41 @@ border: 1px solid rgb(33, 33, 34);
        <widget class="QGroupBox" name="parent_GB">
         <property name="geometry">
          <rect>
-          <x>90</x>
-          <y>420</y>
+          <x>50</x>
+          <y>20</y>
           <width>1121</width>
-          <height>128</height>
+          <height>251</height>
          </rect>
         </property>
         <property name="title">
          <string>Родитель</string>
         </property>
-        <widget class="QWidget" name="layoutWidget">
+        <widget class="QPushButton" name="saveParentData_button">
          <property name="geometry">
           <rect>
-           <x>20</x>
-           <y>30</y>
-           <width>1081</width>
-           <height>68</height>
+           <x>820</x>
+           <y>190</y>
+           <width>291</width>
+           <height>45</height>
           </rect>
          </property>
-         <layout class="QHBoxLayout" name="horizontalLayout_3">
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_9">
-            <item>
-             <widget class="QLabel" name="parentFIO_label">
-              <property name="font">
-               <font>
-                <pointsize>14</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>Фамилия Имя Отчество родителя *:</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="parentFIO_input">
-              <property name="font">
-               <font>
-                <pointsize>14</pointsize>
-               </font>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QLineEdit{
-border: 1px solid rgb(33, 33, 34);
-}</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-              <property name="placeholderText">
-               <string>ФИО родителя</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer_2">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_10">
-            <item>
-             <widget class="QLabel" name="passport_label">
-              <property name="font">
-               <font>
-                <pointsize>14</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>Паспортные данные одного из родителей *:</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_2">
-              <item>
-               <widget class="QLineEdit" name="passSeria_input">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QLineEdit{
-border: 1px solid rgb(33, 33, 34);
-}</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="placeholderText">
-                 <string>Серия паспорта</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="passNumber_input">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QLineEdit{
-border: 1px solid rgb(33, 33, 34);
-}</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="placeholderText">
-                 <string>Номер паспорта</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </widget>
-       </widget>
-       <widget class="QPushButton" name="saveData_button">
-        <property name="geometry">
-         <rect>
-          <x>969</x>
-          <y>600</y>
-          <width>251</width>
-          <height>45</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Segoe UI</family>
-          <pointsize>14</pointsize>
-         </font>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="mouseTracking">
-         <bool>true</bool>
-        </property>
-        <property name="tabletTracking">
-         <bool>false</bool>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton{
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="tabletTracking">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
 background-color: rgba(221, 255, 255, 1);
 border-radius: 20px;
 }
@@ -448,16 +401,341 @@ QPushButton:pressed{
 background-color: rgba(221, 255, 255, 0.5);
 border: 2px solid rgb(0, 0, 0);
 }</string>
-        </property>
-        <property name="text">
-         <string>Сохранить данные</string>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-        <property name="autoDefault">
-         <bool>false</bool>
-        </property>
+         </property>
+         <property name="text">
+          <string>Сохранить данные родителя</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="childFIO_label_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>200</y>
+           <width>341</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>* - поля, обязательные к заполнению</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>40</y>
+           <width>1101</width>
+           <height>136</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5" columnstretch="1,0,0,0,1">
+          <item row="0" column="2">
+           <widget class="QLabel" name="parentTelephoneNumber_label">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Номер телефона *:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QDateEdit" name="birthdayParent_input">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QDateEdit{
+border: 1px solid rgb(33, 33, 34);
+padding: 1px;
+}</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="buttonSymbols">
+             <enum>QAbstractSpinBox::UpDownArrows</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLineEdit" name="parentTelephoneNumber_input">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+border: 1px solid rgb(33, 33, 34);
+}</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>Номер телефона</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLabel" name="passNumber_label">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Номер паспорта:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="2">
+           <widget class="QLabel" name="parentFIO_label">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>ФИО*:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="4">
+           <widget class="QLineEdit" name="whoGavePass_input">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+border: 1px solid rgb(33, 33, 34);
+}</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>Кем выдан</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QDateEdit" name="passportDate_input">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QDateEdit{
+border: 1px solid rgb(33, 33, 34);
+padding: 1px;
+}</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="buttonSymbols">
+             <enum>QAbstractSpinBox::UpDownArrows</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" colspan="2">
+           <widget class="QLabel" name="parentAdres_label">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Адрес:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="birthdayParent_label">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string>Дата рождения:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3">
+           <widget class="QLineEdit" name="passSeria_input">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+border: 1px solid rgb(33, 33, 34);
+}</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>Серия паспорта</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <widget class="QLineEdit" name="parentFIO_input">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+border: 1px solid rgb(33, 33, 34);
+}</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>ФИО родителя</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QLabel" name="passSeria_label">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Серия паспорта:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" colspan="2">
+           <widget class="QLineEdit" name="parentAdres_input">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+border: 1px solid rgb(33, 33, 34);
+}</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>Адрес</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="4">
+           <widget class="QLabel" name="whoGavePass_label">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string>Кем выдан:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QLabel" name="passportDate_label">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string>Дата выдачи:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLineEdit" name="passNumber_input">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+border: 1px solid rgb(33, 33, 34);
+}</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>Номер паспорта</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
        </widget>
        <widget class="QPushButton" name="clearAll_button">
         <property name="enabled">
@@ -465,8 +743,8 @@ border: 2px solid rgb(0, 0, 0);
         </property>
         <property name="geometry">
          <rect>
-          <x>740</x>
-          <y>600</y>
+          <x>660</x>
+          <y>610</y>
           <width>211</width>
           <height>45</height>
          </rect>
@@ -513,704 +791,33 @@ border: 2px solid rgb(0, 0, 0);
          <bool>false</bool>
         </property>
        </widget>
-       <widget class="QLabel" name="childFIO_label_2">
+       <widget class="QPushButton" name="saveChildData_button">
         <property name="geometry">
          <rect>
-          <x>90</x>
-          <y>560</y>
-          <width>341</width>
-          <height>20</height>
+          <x>880</x>
+          <y>610</y>
+          <width>291</width>
+          <height>45</height>
          </rect>
         </property>
         <property name="font">
          <font>
+          <family>Segoe UI</family>
           <pointsize>14</pointsize>
          </font>
         </property>
-        <property name="text">
-         <string>* - поля, обязательные к заполнению</string>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
         </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="tab2_documents">
-       <property name="styleSheet">
-        <string notr="true">QScrollArea{
-border: none;
-}
-</string>
-       </property>
-       <attribute name="title">
-        <string>Договоры</string>
-       </attribute>
-       <widget class="QScrollArea" name="scrollArea">
-        <property name="geometry">
-         <rect>
-          <x>-20</x>
-          <y>0</y>
-          <width>1271</width>
-          <height>681</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true"/>
-        </property>
-        <property name="widgetResizable">
+        <property name="mouseTracking">
          <bool>true</bool>
         </property>
-        <widget class="QWidget" name="scrollAreaWidgetContents">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>0</y>
-           <width>1254</width>
-           <height>1526</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <layout class="QGridLayout" name="gridLayout">
-          <property name="leftMargin">
-           <number>20</number>
-          </property>
-          <property name="topMargin">
-           <number>20</number>
-          </property>
-          <property name="rightMargin">
-           <number>20</number>
-          </property>
-          <property name="bottomMargin">
-           <number>20</number>
-          </property>
-          <property name="horizontalSpacing">
-           <number>10</number>
-          </property>
-          <property name="verticalSpacing">
-           <number>77</number>
-          </property>
-          <item row="2" column="0">
-           <widget class="QGroupBox" name="createDocument_GB">
-            <property name="font">
-             <font>
-              <pointsize>14</pointsize>
-              <italic>false</italic>
-              <bold>false</bold>
-             </font>
-            </property>
-            <property name="title">
-             <string>Создание нового договора</string>
-            </property>
-            <property name="flat">
-             <bool>false</bool>
-            </property>
-            <property name="checkable">
-             <bool>false</bool>
-            </property>
-            <layout class="QGridLayout" name="gridLayout_4">
-             <property name="topMargin">
-              <number>25</number>
-             </property>
-             <property name="horizontalSpacing">
-              <number>10</number>
-             </property>
-             <property name="verticalSpacing">
-              <number>25</number>
-             </property>
-             <item row="4" column="0">
-              <widget class="QPushButton" name="createDocumentPDF_button">
-               <property name="font">
-                <font>
-                 <family>Segoe UI</family>
-                 <pointsize>14</pointsize>
-                </font>
-               </property>
-               <property name="cursor">
-                <cursorShape>PointingHandCursor</cursorShape>
-               </property>
-               <property name="mouseTracking">
-                <bool>true</bool>
-               </property>
-               <property name="tabletTracking">
-                <bool>false</bool>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton{
+        <property name="tabletTracking">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
 background-color: rgba(221, 255, 255, 1);
-padding: 5px;
-border-radius: 20px;
-}
-
-
-QPushButton:hover{
-background-color: rgba(221, 255, 255, 0.7);
-border: 1px solid rgb(0, 0, 0);
-}
-
-QPushButton:pressed{
-background-color: rgba(221, 255, 255, 0.5);
-border: 2px solid rgb(0, 0, 0);
-}</string>
-               </property>
-               <property name="text">
-                <string>Сформировать договор в PDF</string>
-               </property>
-               <property name="checkable">
-                <bool>false</bool>
-               </property>
-               <property name="autoDefault">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="0">
-              <layout class="QVBoxLayout" name="verticalLayout_12">
-               <property name="spacing">
-                <number>20</number>
-               </property>
-               <item>
-                <layout class="QVBoxLayout" name="verticalLayout_13">
-                 <item>
-                  <widget class="QLabel" name="createParentFIO_label">
-                   <property name="font">
-                    <font>
-                     <pointsize>14</pointsize>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>ФИО родителя:</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QLineEdit" name="createParentFIO_input">
-                   <property name="font">
-                    <font>
-                     <pointsize>14</pointsize>
-                    </font>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">QLineEdit{
-border: 1px solid rgb(33, 33, 34);
-}</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                   <property name="readOnly">
-                    <bool>true</bool>
-                   </property>
-                   <property name="placeholderText">
-                    <string>ФИО родителя</string>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </item>
-               <item>
-                <layout class="QVBoxLayout" name="verticalLayout_14">
-                 <item>
-                  <widget class="QLabel" name="createParentPassport_label">
-                   <property name="font">
-                    <font>
-                     <pointsize>14</pointsize>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>Паспортные данные одного из родителей:</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_5">
-                   <item>
-                    <widget class="QLineEdit" name="createParentPassportSeria_input">
-                     <property name="font">
-                      <font>
-                       <pointsize>14</pointsize>
-                      </font>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true">QLineEdit{
-border: 1px solid rgb(33, 33, 34);
-}</string>
-                     </property>
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                     <property name="placeholderText">
-                      <string>Серия паспорта</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLineEdit" name="createParentPassportNumber_input">
-                     <property name="font">
-                      <font>
-                       <pointsize>14</pointsize>
-                      </font>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true">QLineEdit{
-border: 1px solid rgb(33, 33, 34);
-}</string>
-                     </property>
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                     <property name="placeholderText">
-                      <string>Номер паспорта</string>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </item>
-                </layout>
-               </item>
-               <item>
-                <layout class="QVBoxLayout" name="verticalLayout_16">
-                 <item>
-                  <widget class="QLabel" name="createChildFIO_label">
-                   <property name="font">
-                    <font>
-                     <pointsize>14</pointsize>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>ФИО ребёнка:</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QLineEdit" name="createChildFIO_input">
-                   <property name="font">
-                    <font>
-                     <pointsize>14</pointsize>
-                    </font>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">QLineEdit{
-border: 1px solid rgb(33, 33, 34);
-}</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                   <property name="readOnly">
-                    <bool>true</bool>
-                   </property>
-                   <property name="placeholderText">
-                    <string>ФИО ребёнка</string>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </item>
-               <item>
-                <layout class="QVBoxLayout" name="verticalLayout_17">
-                 <item>
-                  <widget class="QLabel" name="createChildBirthday_label">
-                   <property name="font">
-                    <font>
-                     <pointsize>14</pointsize>
-                    </font>
-                   </property>
-                   <property name="layoutDirection">
-                    <enum>Qt::LeftToRight</enum>
-                   </property>
-                   <property name="text">
-                    <string>Дата рождения ребёнка:</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QDateEdit" name="createChildBirthday_input">
-                   <property name="font">
-                    <font>
-                     <pointsize>14</pointsize>
-                    </font>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">QDateEdit{
-border: 1px solid rgb(33, 33, 34);
-padding: 1px;
-}</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                   <property name="buttonSymbols">
-                    <enum>QAbstractSpinBox::UpDownArrows</enum>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </item>
-              </layout>
-             </item>
-             <item row="3" column="0">
-              <widget class="QLabel" name="warning_2">
-               <property name="font">
-                <font>
-                 <pointsize>14</pointsize>
-                 <bold>true</bold>
-                </font>
-               </property>
-               <property name="layoutDirection">
-                <enum>Qt::LeftToRight</enum>
-               </property>
-               <property name="text">
-                <string>*После заполнения всех полей необходимо сформировать договор в PDF файл, распечатать и подписать документ</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="0">
-              <layout class="QVBoxLayout" name="verticalLayout_18">
-               <item>
-                <layout class="QVBoxLayout" name="verticalLayout_15">
-                 <property name="spacing">
-                  <number>10</number>
-                 </property>
-                 <item>
-                  <widget class="QLabel" name="warning">
-                   <property name="font">
-                    <font>
-                     <pointsize>14</pointsize>
-                     <bold>true</bold>
-                    </font>
-                   </property>
-                   <property name="layoutDirection">
-                    <enum>Qt::LeftToRight</enum>
-                   </property>
-                   <property name="text">
-                    <string>Отмечая “Разрешаю”, я даю своё согласие на использование фото и видеоматериалов в коммерческих целях</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QCheckBox" name="Permission_checkbox">
-                   <property name="font">
-                    <font>
-                     <pointsize>14</pointsize>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>Разрешение на фотосъёмку и видеосъёмку, а также их использование в коммерческих целях</string>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </item>
-              </layout>
-             </item>
-             <item row="2" column="0">
-              <layout class="QHBoxLayout" name="horizontalLayout_6">
-               <item>
-                <widget class="QLabel" name="createData_label">
-                 <property name="font">
-                  <font>
-                   <pointsize>14</pointsize>
-                  </font>
-                 </property>
-                 <property name="layoutDirection">
-                  <enum>Qt::LeftToRight</enum>
-                 </property>
-                 <property name="text">
-                  <string>Дата создания и подписи договора:</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QDateEdit" name="createData_input">
-                 <property name="font">
-                  <font>
-                   <pointsize>14</pointsize>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QDateEdit{
-border: 1px solid rgb(33, 33, 34);
-padding: 1px;
-}</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                 <property name="buttonSymbols">
-                  <enum>QAbstractSpinBox::UpDownArrows</enum>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </item>
-             <item row="5" column="0">
-              <spacer name="verticalSpacer_3">
-               <property name="orientation">
-                <enum>Qt::Vertical</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>20</width>
-                 <height>40</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <spacer name="verticalSpacer">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="0" column="0">
-           <widget class="QGroupBox" name="findDocument_GB">
-            <property name="font">
-             <font>
-              <pointsize>14</pointsize>
-              <italic>false</italic>
-              <bold>false</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
-            <property name="title">
-             <string>Поиск договоров</string>
-            </property>
-            <layout class="QGridLayout" name="gridLayout_2">
-             <property name="topMargin">
-              <number>25</number>
-             </property>
-             <property name="horizontalSpacing">
-              <number>10</number>
-             </property>
-             <property name="verticalSpacing">
-              <number>25</number>
-             </property>
-             <item row="2" column="0">
-              <widget class="QListView" name="documentFindRes_listview">
-               <property name="enabled">
-                <bool>true</bool>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>0</width>
-                 <height>200</height>
-                </size>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="0">
-              <layout class="QVBoxLayout" name="verticalLayout_7">
-               <property name="spacing">
-                <number>20</number>
-               </property>
-               <item>
-                <layout class="QVBoxLayout" name="verticalLayout_5">
-                 <property name="spacing">
-                  <number>4</number>
-                 </property>
-                 <item>
-                  <widget class="QLabel" name="findParentFIO_label">
-                   <property name="font">
-                    <font>
-                     <pointsize>14</pointsize>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>Поиск по ФИО родителя:</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QLineEdit" name="findParentFIO_input">
-                   <property name="font">
-                    <font>
-                     <pointsize>14</pointsize>
-                    </font>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">QLineEdit{
-border: 1px solid rgb(33, 33, 34);
-}</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                   <property name="placeholderText">
-                    <string>ФИО родителя</string>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </item>
-               <item>
-                <layout class="QVBoxLayout" name="verticalLayout_11">
-                 <item>
-                  <widget class="QLabel" name="findParentPassport_label">
-                   <property name="font">
-                    <font>
-                     <pointsize>14</pointsize>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>Поиск по паспортным данным одного из родителей:</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_4">
-                   <property name="spacing">
-                    <number>4</number>
-                   </property>
-                   <item>
-                    <widget class="QLineEdit" name="findParentPassportSeria_input">
-                     <property name="font">
-                      <font>
-                       <pointsize>14</pointsize>
-                      </font>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true">QLineEdit{
-border: 1px solid rgb(33, 33, 34);
-}</string>
-                     </property>
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                     <property name="placeholderText">
-                      <string>Серия паспорта</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLineEdit" name="findParentPassportNumber_input">
-                     <property name="font">
-                      <font>
-                       <pointsize>14</pointsize>
-                      </font>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true">QLineEdit{
-border: 1px solid rgb(33, 33, 34);
-}</string>
-                     </property>
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                     <property name="placeholderText">
-                      <string>Номер паспорта</string>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </item>
-                </layout>
-               </item>
-               <item>
-                <layout class="QVBoxLayout" name="verticalLayout_6">
-                 <property name="spacing">
-                  <number>4</number>
-                 </property>
-                 <item>
-                  <widget class="QLabel" name="findChildFIO_label">
-                   <property name="font">
-                    <font>
-                     <pointsize>14</pointsize>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>Поиск по ФИО ребёнка:</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QLineEdit" name="findChildFIO_input">
-                   <property name="font">
-                    <font>
-                     <pointsize>14</pointsize>
-                    </font>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">QLineEdit{
-border: 1px solid rgb(33, 33, 34);
-}</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                   <property name="placeholderText">
-                    <string>ФИО ребёнка</string>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </item>
-              </layout>
-             </item>
-             <item row="3" column="0">
-              <widget class="QPushButton" name="findDocuments_button">
-               <property name="font">
-                <font>
-                 <family>Segoe UI</family>
-                 <pointsize>14</pointsize>
-                </font>
-               </property>
-               <property name="cursor">
-                <cursorShape>PointingHandCursor</cursorShape>
-               </property>
-               <property name="mouseTracking">
-                <bool>true</bool>
-               </property>
-               <property name="tabletTracking">
-                <bool>false</bool>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton{
-background-color: rgba(221, 255, 255, 1);
-padding: 5px;
 border-radius: 20px;
 }
 
@@ -1223,36 +830,16 @@ QPushButton:pressed{
 background-color: rgba(221, 255, 255, 0.5);
 border: 2px solid rgb(0, 0, 0);
 }</string>
-               </property>
-               <property name="text">
-                <string>Найти и показать результаты</string>
-               </property>
-               <property name="checkable">
-                <bool>false</bool>
-               </property>
-               <property name="autoDefault">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item row="3" column="0">
-           <spacer name="verticalSpacer_2">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-         </layout>
-        </widget>
+        </property>
+        <property name="text">
+         <string>Сохранить данные ПК</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
        </widget>
       </widget>
       <widget class="QWidget" name="tab3_testAtek">
@@ -1460,48 +1047,6 @@ border: 1px solid rgb(33, 33, 34);
             </item>
            </layout>
           </item>
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_20">
-            <property name="spacing">
-             <number>0</number>
-            </property>
-            <item>
-             <widget class="QLabel" name="testParentFIO_label">
-              <property name="font">
-               <font>
-                <pointsize>14</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>ФИО родителя:</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="testParentFIO_input">
-              <property name="font">
-               <font>
-                <pointsize>14</pointsize>
-               </font>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QLineEdit{
-border: 1px solid rgb(33, 33, 34);
-}</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-              <property name="placeholderText">
-               <string>ФИО родителя</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
          </layout>
         </widget>
         <widget class="QWidget" name="layoutWidget_2">
@@ -1603,6 +1148,1087 @@ border: 2px solid rgb(0, 0, 0);
         </widget>
        </widget>
       </widget>
+      <widget class="QWidget" name="tab2_documents">
+       <property name="styleSheet">
+        <string notr="true">QScrollArea{
+border: none;
+}
+</string>
+       </property>
+       <attribute name="title">
+        <string>Договоры</string>
+       </attribute>
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="geometry">
+         <rect>
+          <x>-20</x>
+          <y>0</y>
+          <width>1271</width>
+          <height>651</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1254</width>
+           <height>1843</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetNoConstraint</enum>
+          </property>
+          <property name="leftMargin">
+           <number>20</number>
+          </property>
+          <property name="topMargin">
+           <number>20</number>
+          </property>
+          <property name="rightMargin">
+           <number>20</number>
+          </property>
+          <property name="bottomMargin">
+           <number>20</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>10</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>20</number>
+          </property>
+          <item row="3" column="0">
+           <widget class="QGroupBox" name="findDocument_GB">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="title">
+             <string>Поиск договоров</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="1" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item>
+                <widget class="QLabel" name="findParentPassport_label">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Поиск по паспортным данным одного из родителей:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="findParentPassportNumber_input">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+border: 1px solid rgb(33, 33, 34);
+}</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Номер паспорта</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="findParentPassportSeria_input">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+border: 1px solid rgb(33, 33, 34);
+}</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Серия паспорта</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="findParentFioData_button">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="mouseTracking">
+                <bool>true</bool>
+               </property>
+               <property name="tabletTracking">
+                <bool>false</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: rgba(221, 255, 255, 1);
+border-radius: 20px;
+}
+
+QPushButton:hover{
+background-color: rgba(221, 255, 255, 0.7);
+border: 1px solid rgb(0, 0, 0);
+}
+
+QPushButton:pressed{
+background-color: rgba(221, 255, 255, 0.5);
+border: 2px solid rgb(0, 0, 0);
+}</string>
+               </property>
+               <property name="text">
+                <string>Поиск по ФИО родителя</string>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+               <property name="autoDefault">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <item>
+                <widget class="QLabel" name="findParentFIO_label">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Поиск по ФИО родителя:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="findParentFIO_input">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+border: 1px solid rgb(33, 33, 34);
+}</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="placeholderText">
+                  <string>ФИО родителя</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="2">
+              <widget class="QPushButton" name="findParentPassData_button">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="mouseTracking">
+                <bool>true</bool>
+               </property>
+               <property name="tabletTracking">
+                <bool>false</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: rgba(221, 255, 255, 1);
+border-radius: 20px;
+}
+
+QPushButton:hover{
+background-color: rgba(221, 255, 255, 0.7);
+border: 1px solid rgb(0, 0, 0);
+}
+
+QPushButton:pressed{
+background-color: rgba(221, 255, 255, 0.5);
+border: 2px solid rgb(0, 0, 0);
+}</string>
+               </property>
+               <property name="text">
+                <string>Поиск по паспорту родителя</string>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+               <property name="autoDefault">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QPushButton" name="findChildFioData_button">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="mouseTracking">
+                <bool>true</bool>
+               </property>
+               <property name="tabletTracking">
+                <bool>false</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: rgba(221, 255, 255, 1);
+border-radius: 20px;
+}
+
+QPushButton:hover{
+background-color: rgba(221, 255, 255, 0.7);
+border: 1px solid rgb(0, 0, 0);
+}
+
+QPushButton:pressed{
+background-color: rgba(221, 255, 255, 0.5);
+border: 2px solid rgb(0, 0, 0);
+}</string>
+               </property>
+               <property name="text">
+                <string>Поиск по ФИО ребёнка</string>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+               <property name="autoDefault">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <item>
+                <widget class="QLabel" name="findChildFIO_label">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Поиск по ФИО ребёнка:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="findChildFIO_input">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+border: 1px solid rgb(33, 33, 34);
+}</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="placeholderText">
+                  <string>ФИО ребёнка</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="5" column="0" rowspan="3" colspan="3">
+              <widget class="QListView" name="documentFindRes_listview">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>200</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QGroupBox" name="createDocument_GB">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="title">
+             <string>Создание нового договора</string>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_4">
+             <property name="topMargin">
+              <number>25</number>
+             </property>
+             <property name="horizontalSpacing">
+              <number>10</number>
+             </property>
+             <property name="verticalSpacing">
+              <number>25</number>
+             </property>
+             <item row="2" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_18">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_15">
+                 <property name="spacing">
+                  <number>10</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="warning">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::LeftToRight</enum>
+                   </property>
+                   <property name="text">
+                    <string>Отмечая “Разрешаю”, я даю своё согласие на использование фото и видеоматериалов в коммерческих целях</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="Permission_checkbox">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Разрешение на фотосъёмку и видеосъёмку, а также их использование в коммерческих целях</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item row="4" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <widget class="QLabel" name="documentPeriodDate_label">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="text">
+                  <string>Срок составления договора*:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QDateEdit" name="documentPeriodDate_input">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QDateEdit{
+border: 1px solid rgb(33, 33, 34);
+padding: 1px;
+}</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="buttonSymbols">
+                  <enum>QAbstractSpinBox::UpDownArrows</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="7" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_12">
+               <item>
+                <widget class="QLabel" name="price_label">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Стоимость услуг*:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="price_input">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+border: 1px solid rgb(33, 33, 34);
+}</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Стоимость услуг</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="3" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
+               <item>
+                <widget class="QLabel" name="createData_label">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="text">
+                  <string>Дата создания и подписи договора*:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QDateEdit" name="createData_input">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QDateEdit{
+border: 1px solid rgb(33, 33, 34);
+padding: 1px;
+}</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="buttonSymbols">
+                  <enum>QAbstractSpinBox::UpDownArrows</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="9" column="0">
+              <widget class="QLabel" name="warning_2">
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;*Заполните остальные поля для создания договора.&lt;br/&gt;Если найденные выше данные некорректны перейдите в окно &amp;quot;Данные о клиентах&amp;quot; и внесите нужные изменения.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;После заполнения всех полей необходимо сформировать договор в PDF файл, распечатать и подписать документ&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="0">
+              <spacer name="verticalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="1" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_12">
+               <property name="spacing">
+                <number>20</number>
+               </property>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_13">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_16">
+                   <item>
+                    <widget class="QLabel" name="createChildFIO_label">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>ФИО ребёнка:</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="createChildFIO_input">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QLineEdit{
+border: 1px solid rgb(33, 33, 34);
+}</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="readOnly">
+                      <bool>true</bool>
+                     </property>
+                     <property name="placeholderText">
+                      <string>ФИО ребёнка</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="findChildrenFioData_button">
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="mouseTracking">
+                      <bool>true</bool>
+                     </property>
+                     <property name="tabletTracking">
+                      <bool>false</bool>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+background-color: rgba(221, 255, 255, 1);
+border-radius: 20px;
+}
+
+QPushButton:hover{
+background-color: rgba(221, 255, 255, 0.7);
+border: 1px solid rgb(0, 0, 0);
+}
+
+QPushButton:pressed{
+background-color: rgba(221, 255, 255, 0.5);
+border: 2px solid rgb(0, 0, 0);
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Найти данные по ФИО ребёнка</string>
+                     </property>
+                     <property name="checkable">
+                      <bool>false</bool>
+                     </property>
+                     <property name="autoDefault">
+                      <bool>false</bool>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_17">
+                   <item>
+                    <widget class="QLabel" name="createChildBirthday_label">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="layoutDirection">
+                      <enum>Qt::LeftToRight</enum>
+                     </property>
+                     <property name="text">
+                      <string>Дата рождения ребёнка:</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QDateEdit" name="createChildBirthday_input">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QDateEdit{
+border: 1px solid rgb(33, 33, 34);
+padding: 1px;
+}</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="buttonSymbols">
+                      <enum>QAbstractSpinBox::UpDownArrows</enum>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="createParentFIO_label">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>ФИО родителя:</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="createParentFIO_input">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{
+border: 1px solid rgb(33, 33, 34);
+}</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                   <property name="placeholderText">
+                    <string>ФИО родителя</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="birthdayParent_label_2">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                    </font>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::LeftToRight</enum>
+                   </property>
+                   <property name="text">
+                    <string>Дата рождения родителя:</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDateEdit" name="documentBirthdayParent_input">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QDateEdit{
+border: 1px solid rgb(33, 33, 34);
+padding: 1px;
+}</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="buttonSymbols">
+                    <enum>QAbstractSpinBox::UpDownArrows</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_14">
+                 <item>
+                  <widget class="QLabel" name="createParentPassport_label">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Паспортные данные одного из родителей:</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_5">
+                   <item>
+                    <widget class="QLineEdit" name="createParentPassportSeria_input">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QLineEdit{
+border: 1px solid rgb(33, 33, 34);
+}</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string>Серия паспорта</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="createParentPassportNumber_input">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QLineEdit{
+border: 1px solid rgb(33, 33, 34);
+}</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string>Номер паспорта</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="documentParentAdres_label">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Адрес:</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="documentParentAdres_input">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{
+border: 1px solid rgb(33, 33, 34);
+}</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Адрес</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QLabel" name="documentParentTelephoneNumber_label">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Номер телефона *:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="documentParentTelephoneNumber_input">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+border: 1px solid rgb(33, 33, 34);
+}</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Номер телефона</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="10" column="0">
+              <widget class="QPushButton" name="createDocumentPDF_button">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="mouseTracking">
+                <bool>true</bool>
+               </property>
+               <property name="tabletTracking">
+                <bool>false</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: rgba(221, 255, 255, 1);
+padding: 5px;
+border-radius: 20px;
+}
+
+
+QPushButton:hover{
+background-color: rgba(221, 255, 255, 0.7);
+border: 1px solid rgb(0, 0, 0);
+}
+
+QPushButton:pressed{
+background-color: rgba(221, 255, 255, 0.5);
+border: 2px solid rgb(0, 0, 0);
+}</string>
+               </property>
+               <property name="text">
+                <string>Сформировать договор в PDF</string>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+               <property name="autoDefault">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_13">
+               <item>
+                <widget class="QLabel" name="familyStepen_label">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Степень родства*:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="familyStepen_input">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+border: 1px solid rgb(33, 33, 34);
+}</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Степень родства</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="6" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_11">
+               <item>
+                <widget class="QLabel" name="countOfLessons_label">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Количество занятий*:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="countOfLessons_input">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+border: 1px solid rgb(33, 33, 34);
+}</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Количество занятий</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
       <widget class="QWidget" name="tab4_clientsData">
        <attribute name="title">
         <string>Данные о клиентах</string>
@@ -1619,38 +2245,10 @@ border: 2px solid rgb(0, 0, 0);
         <property name="title">
          <string>Поиск существующих данных</string>
         </property>
-        <widget class="QLabel" name="warning_4">
+        <widget class="QPushButton" name="findDataChildFIO_button">
          <property name="geometry">
           <rect>
-           <x>260</x>
-           <y>40</y>
-           <width>581</width>
-           <height>26</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>14</pointsize>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="layoutDirection">
-          <enum>Qt::LeftToRight</enum>
-         </property>
-         <property name="text">
-          <string>Обязательно заполните оба поля для точной идентификации</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="wordWrap">
-          <bool>false</bool>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="findData_button">
-         <property name="geometry">
-          <rect>
-           <x>380</x>
+           <x>130</x>
            <y>180</y>
            <width>331</width>
            <height>45</height>
@@ -1688,7 +2286,7 @@ border: 2px solid rgb(0, 0, 0);
 }</string>
          </property>
          <property name="text">
-          <string>Найти данные</string>
+          <string>Найти данные ребёнка по ФИО</string>
          </property>
          <property name="checkable">
           <bool>false</bool>
@@ -1971,6 +2569,56 @@ border: 2px solid rgb(0, 0, 0);
            </widget>
           </item>
          </layout>
+        </widget>
+        <widget class="QPushButton" name="findDataParentFIO_button">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>180</y>
+           <width>331</width>
+           <height>45</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="tabletTracking">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: rgba(221, 255, 255, 1);
+border-radius: 20px;
+}
+
+QPushButton:hover{
+background-color: rgba(221, 255, 255, 0.7);
+border: 1px solid rgb(0, 0, 0);
+}
+
+QPushButton:pressed{
+background-color: rgba(221, 255, 255, 0.5);
+border: 2px solid rgb(0, 0, 0);
+}</string>
+         </property>
+         <property name="text">
+          <string>Найти данные родителя по ФИО</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
         </widget>
        </widget>
       </widget>
